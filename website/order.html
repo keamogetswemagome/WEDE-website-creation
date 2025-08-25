@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasko's Kitchen | Order</title>
+</head>
+<body>
+
+
+  <header>
+    <h1>Sasko's Kitchen</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    <h2>Place Your Order Of Our Kota Wraps</h2>
+    <p>Please fill in your details and select your meals below:</p>
+
+    <form action="submit_order.php" method="post">
+      
+
+      <section>
+        <h3>Your Information</h3>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="40" required></textarea><br><br>
+      </section>
+
+
+      <section>
+        <h3>Menu Selection</h3>
+
+        <label><input type="checkbox" name="meal[]" value="MABENA R40"> MABENA – Infused Niciose salsa, lettuce, chips, chicken Polony & cheese <strong>R40</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="WITNESS R45"> WITNESS – Infused Niciose salsa, lettuce, chips, chicken Polony, chicken Vienna <strong>R45</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="ROSE R48"> ROSE – Infused Niciose salsa, lettuce, chips, chicken Polony, chicken Vienna & cheese <strong>R48</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="JOSPHINA R52"> JOSPHINA – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese & chicken Russian <strong>R52</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="JOSHUA R55"> JOSHUA – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese, chicken Russian & chicken Vienna <strong>R55</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="ANDRIS R58"> ANDRIS – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese, chicken Vienna, ground beef patty & chicken Russian <strong>R58</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="LILAN R62"> LILAN – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese, chicken Vienna, ground beef patty & chicken Russian <strong>R62</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="SAMUEL R85"> SAMUEL – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese, Macon, chicken Vienna, ground beef patty & chicken Russian <strong>R85</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="SAMANTHA R68"> SAMANTHA – Infused Niciose salsa, lettuce, chips, chicken Polony, egg, cheese (x2), Macon (x2), chicken Vienna, ground beef patty & chicken Russian <strong>R68</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="MBONGEN R75"> MBONGEN – Infused Niciose salsa, lettuce, chips, Macon (x2), chicken Polony (x2), egg (x2), cheese (x2), chicken Vienna (x2), ground beef patty (x2) & chicken Russian (x2) <strong>R75</strong></label><br>
+
+        <label><input type="checkbox" name="meal[]" value="TITO R90"> TITO – Infused Niciose salsa, lettuce, chips, chicken Polony (x3), egg (x3), cheese (x3), Macon (x3), chicken Vienna (x3), ground beef patty (x3) & chicken Russian (x3) <strong>R90</strong></label><br>
+      </section>
+
+
+      <section>
+        <h3>Drinks</h3>
+        <label><input type="checkbox" name="drink[]" value="COKE 330ml R14"> COKE 330ml <strong>R14</strong></label><br>
+        <label><input type="checkbox" name="drink[]" value="SPRITE R14"> SPRITE <strong>R14</strong></label><br>
+        <label><input type="checkbox" name="drink[]" value="STONEY R13"> STONEY <strong>R13</strong></label><br>
+      </section>
+
+
+      <section>
+        <h3>Payment Method</h3>
+        <label><input type="radio" name="payment" value="Cash on Delivery" required> Cash on Delivery</label><br>
+        <label><input type="radio" name="payment" value="Card Payment"> Card Payment</label><br><br>
+      </section>
+
+
+      <section>
+        <h3>Special Instructions</h3>
+        <textarea name="instructions" rows="4" cols="40" placeholder="Any extra requests?"></textarea><br><br>
+      </section>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Sasko's Kitchen. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@saskoskitchen.com">info@saskoskitchen.com</a></p>
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>
